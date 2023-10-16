@@ -84,7 +84,7 @@ fetch('https://memos.wangguanjingji.fun/api/v1/memo?creatorId=1&tag=MemosCollect
   .then(response => response.json())
   .then(data => {
 
-    const memoList = data.data;
+    const memoList = data;
 
     const memoMap = new Map(); // Map 用于存储不同日期中对应的Memo
     memoList.forEach(memo => {
