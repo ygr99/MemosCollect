@@ -80,7 +80,7 @@ function replaceLinks(text) {
   });
 }
 
-fetch('https://memos.wangguanjingji.fun/api/memo?creatorId=1&tag=MemosCollect')
+fetch('https://memos.wangguanjingji.fun/api/v1/memo?creatorId=1&tag=MemosCollect')
   .then(response => response.json())
   .then(data => {
 
