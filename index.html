@@ -80,7 +80,10 @@ function replaceLinks(text) {
   });
 }
 
-fetch('http://111.229.103.146:5230/api/v1/memo?creatorId=1&tag=MemosCollect')
+fetch('http://111.229.103.146:5230/api/v1/memo?creatorId=1&tag=MemosCollect', {
+  method: 'GET',
+  mode: 'cors', // 指示浏览器使用 CORS 发送请求
+})
   .then(response => response.json())
   .then(data => {
 
